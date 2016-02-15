@@ -51,7 +51,7 @@ const css = (...styleDefinitions) => {
 
     const className = validDefinitions.map(s => s._name).join("-o_O-");
     injectStyleOnce(className, `.${className}`,
-        validDefinitions.map(d => d._definition));
+        validDefinitions.map(d => d._definition), false);
 
     return className;
 };
